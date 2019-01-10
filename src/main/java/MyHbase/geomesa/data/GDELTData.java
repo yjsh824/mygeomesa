@@ -96,7 +96,7 @@ public class GDELTData implements TutorialData {
             }
 
             // date parser corresponding to the CSV format
-            DateTimeFormatter dateFormat = DateTimeFormatter.ofPattern("yyyyMMdd", Locale.US);
+            DateTimeFormatter dateFormat = DateTimeFormatter.ofPattern("yyyyMMdd", Locale.CHINA);
 
             // use a geotools SimpleFeatureBuilder to create our features
             SimpleFeatureBuilder builder = new SimpleFeatureBuilder(getSimpleFeatureType());

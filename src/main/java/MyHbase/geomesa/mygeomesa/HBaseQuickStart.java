@@ -14,7 +14,12 @@ public class HBaseQuickStart extends GeoMesaQuickStart {
 
     public static void main(String[] args) {
         try {
-            new HBaseQuickStart(args).run();
+        	 String[] params=new String[4];
+        	 params[0]="--hbase.zookeepers";
+        	 params[1]="master";
+        	 params[2]="--hbase.catalog";
+        	 params[3]="geomesa_hbase_test1";        	 
+            new HBaseQuickStart(params).run();
         } catch (ParseException e) {
             System.exit(1);
         } catch (Throwable e) {
